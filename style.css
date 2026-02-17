@@ -1,0 +1,58 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: montserrat;
+}
+
+.nav-container {
+  margin: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.main-menu {
+  display: flex;
+  position: relative;
+}
+
+.main-menu li {
+  list-style: none;
+  padding: 16px 30px;
+  border-right: rgb(141, 141, 141) 1px solid;
+  transition: 0.3s ease;
+}
+.portfolio-menu {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 103%;
+  left: 0;
+  background: blue;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+.main-menu li:hover {
+  background: blue;
+}
+.main-menu #port:hover  .portfolio-menu {
+  background: blue;
+  visibility: visible;
+  opacity: 1;
+}
+.main-menu li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
